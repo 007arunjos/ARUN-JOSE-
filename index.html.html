@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Your Name — Research Portfolio</title>
+  <meta name="description" content="Research portfolio of Dr. Your Name — publications, projects, teaching, datasets, and contact." />
+  <link rel="canonical" href="https://your-domain.example/" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Dr. Your Name — Research Portfolio" />
+  <meta property="og:description" content="Publications, projects, teaching, datasets, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.example/" />
+  <meta property="og:image" content="https://your-domain.example/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Minimal, accessible, responsive CSS (no framework) -->
+  <style>
+    :root{
+      --bg:#0b0d10; --muted:#9aa4b2; --text:#e8edf3; --card:#12161b; --link:#7cc4ff; --accent:#7fffca;
+      --max:1100px; --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    @media (prefers-color-scheme: light){
+      :root{--bg:#ffffff; --muted:#5b6676; --text:#0b1220; --card:#f5f7fb; --link:#006adc; --accent:#0aa36f}
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:auto;padding:24px}
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:16px;align-items:center}
+    .brand img{width:64px;height:64px;border-radius:50%;box-shadow:var(--shadow)}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:10px;background:transparent}
+    nav a:hover{background:rgba(124,196,255,.12)}
+    .tag{display:inline-block;padding:2px 10px;border-radius:999px;background:rgba(127,255,202,.15);color:var(--accent);font-weight:600;font-size:12px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .col-8{grid-column:span 8}
+    .col-4{grid-column:span 4}
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    h1,h2,h3{line-height:1.2;margin:0 0 10px}
+    h1{font-size:clamp(26px,3vw,36px)}
+    h2{font-size:clamp(20px,2.2vw,28px);margin-top:8px}
+    h3{font-size:18px;margin-top:14px}
+    .muted{color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);font-size:13px}
+    .list{display:grid;gap:14px}
+    .pub{padding:12px;border-radius:14px;background:rgba(255,255,255,.04)}
+    .pub b{display:block}
+    footer{margin:40px 0 10px;color:var(--muted);font-size:14px}
+    .cta{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--link),var(--accent));color:#001018;font-weight:700;border:0}
+    .cta:hover{filter:brightness(1.05)}
+    .section{margin-top:22px}
+    .kpis{display:flex;gap:16px;flex-wrap:wrap}
+    .kpi{flex:1 1 140px;background:var(--card);border-radius:14px;padding:14px;text-align:center}
+    details{background:rgba(255,255,255,.04);padding:10px 14px;border-radius:12px}
+    summary{cursor:pointer;font-weight:600}
+    @media (max-width:900px){.col-8,.col-4{grid-column:span 12}}
+  </style>
+  <!-- Schema.org Person for better indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Your Name",
+    "affiliation": {"@type": "Organization","name": "Your Institution"},
+    "jobTitle": "Research Scholar",
+    "url": "https://your-domain.example/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=YOURID",
+      "https://orcid.org/0000-0000-0000-0000",
+      "https://www.semanticscholar.org/author/YOURID",
+      "https://www.linkedin.com/in/YOURID/"
+    ],
+    "email": "mailto:you@yourdomain.example"
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="/avatar.jpg" alt="Portrait of Dr. Your Name" />
+        <div>
+          <h1>Dr. Your Name</h1>
+          <div class="muted">Research Scholar · Energy Systems · Battery Analytics</div>
+          <div class="chips">
+            <span class="chip">HEMS</span>
+            <span class="chip">Optimization (PSO, GJO, SPEA2)</span>
+            <span class="chip">PV · Battery · DC Homes</span>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#talks">Talks</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="grid">
+        <section id="about" class="col-8">
+          <div class="card">
+            <span class="tag">About</span>
+            <h2>Hi, I’m Dr. Your Name.</h2>
+            <p>I study smart‑home energy management systems (HEMS) integrating solar PV, battery storage, and optimization for cost/loss/comfort trade‑offs. I also work on battery State‑of‑Health (SoH) analytics and DC home architectures.</p>
+            <div class="kpis">
+              <div class="kpi"><div class="muted">Publications</div><div style="font-size:28px;font-weight:800">12</div></div>
+              <div class="kpi"><div class="muted">Citations</div><div style="font-size:28px;font-weight:800">315</div></div>
+              <div class="kpi"><div class="muted">h‑index</div><div style="font-size:28px;font-weight:800">9</div></div>
+            </div>
+            <p>
+              <a class="cta" href="/cv.pdf" download>⬇ Download CV</a>
+              <a style="margin-left:10px" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar →</a>
+              <a style="margin-left:10px" href="https://orcid.org/" target="_blank" rel="noopener">ORCID →</a>
+            </p>
+          </div>
+        </section>
+
+        <aside class="col-4">
+          <div class="card">
+            <span class="tag">Highlights</span>
+            <ul class="list">
+              <li>🎓 PhD, Electrical Engineering — <em>Your University</em></li>
+              <li>⚡ DC vs AC Home Energy Systems</li>
+              <li>🧠 Multi‑objective optimization (SPEA2, PSO, GJO)</li>
+              <li>📦 Open datasets & code on <a href="https://github.com/yourid" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Contact</span>
+            <p id="contact" class="muted">Email: <a href="mailto:you@yourdomain.example">you@yourdomain.example</a><br>Office: Dept. of EE, Your Institution</p>
+          </div>
+        </aside>
+      </div>
+
+      <section id="publications" class="section card">
+        <span class="tag">Publications</span>
+        <div class="list">
+          <!-- Duplicate <article> blocks per paper. Newest first. -->
+          <article class="pub">
+            <b>Title of your latest paper</b>
+            <span class="muted">Your Name, Co‑authors — <em>Journal Name</em>, 2025</span>
+            <div>
+              <a href="#">PDF</a> · <a href="#">Code</a> · <a href="#">Dataset</a> · <a href="#">DOI</a>
+            </div>
+          </article>
+          <article class="pub">
+            <b>Microbial Proteases: A Review of the Paradigm Shift in Anti‑inflammatory Therapeutics</b>
+            <span class="muted">Your Name, et al. — <em>Archives of Microbiology</em>, 2024</span>
+            <div>
+              <a href="#">PDF</a> · <a href="#">DOI</a>
+            </div>
+          </article>
+          <!-- Add more -->
+        </div>
+        <details class="section"><summary>How to add publications quickly</summary>
+          <p>Add each paper as an <code>&lt;article class="pub"&gt;</code>. Keep newest first. Link to PDF/DOI/code/dataset for maximum visibility.</p>
+        </details>
+      </section>
+
+      <section id="projects" class="section card">
+        <span class="tag">Projects</span>
+        <div class="list">
+          <div>
+            <b>DC vs AC Home Energy Simulator</b>
+            <div class="muted">Python · PV/Battery/Grid · Multi‑objective optimization</div>
+            <a href="#">Repo</a> · <a href="#">Docs</a>
+          </div>
+          <div>
+            <b>Battery SoH Hybrid (GARCH‑CNN‑LSTM)</b>
+            <div class="muted">Raspberry Pi test bench + deep learning</div>
+            <a href="#">Preprint</a> · <a href="#">Code</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="teaching" class="section card">
+        <span class="tag">Teaching</span>
+        <ul class="list">
+          <li>BCSE317L Information Security — Module author</li>
+          <li>AI: Logic & Reasoning — Slide decks and quizzes</li>
+        </ul>
+      </section>
+
+      <section id="talks" class="section card">
+        <span class="tag">Talks</span>
+        <ul class="list">
+          <li>"Smart DC Homes: From Model to Reality" — Invited seminar, 2025</li>
+          <li>"Battery SoH from Low‑cost Benches" — Workshop, 2024</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Your Name · <a href="/sitemap.xml">Sitemap</a>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
